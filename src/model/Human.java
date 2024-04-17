@@ -9,7 +9,7 @@ public class Human {
         return name + " " + age;
     }
     public Human(String data){
-        String [] split = data.split(",");
+        String [] split = data.split("[, ?:@]+");
         name = split[0];
         age = Integer.parseInt(split[1]);
     }
