@@ -10,7 +10,7 @@ public class Main {
     Human [] humans = HumanService.convert(data);
     Human [] sortedHumans = HumanService.sortedHumans(humans);
         for (int i = 0; i < sortedHumans.length; i++) {
-            FileService.write(URL,"\nMax Human = " + sortedHumans[i].toString());
+            FileService.write(URL,"\nHuman = " + sortedHumans[i].toString());
         }
 
     }
